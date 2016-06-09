@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 5.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoneyTrackApp", "MoneyTrackApp\MoneyTrackApp.csproj", "{BACE245A-6573-48EB-A6B6-ED60BC50DA33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoneyTrackApp.Tests", "MoneyTrackApp.Tests\MoneyTrackApp.Tests.csproj", "{0C0DEC1F-8688-4197-9E3C-E0855BC3BA7E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BACE245A-6573-48EB-A6B6-ED60BC50DA33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BACE245A-6573-48EB-A6B6-ED60BC50DA33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BACE245A-6573-48EB-A6B6-ED60BC50DA33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BACE245A-6573-48EB-A6B6-ED60BC50DA33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C0DEC1F-8688-4197-9E3C-E0855BC3BA7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C0DEC1F-8688-4197-9E3C-E0855BC3BA7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C0DEC1F-8688-4197-9E3C-E0855BC3BA7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C0DEC1F-8688-4197-9E3C-E0855BC3BA7E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
