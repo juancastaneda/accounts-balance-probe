@@ -1,18 +1,12 @@
-﻿
-using System;
-
-namespace MoneyTrackApp.Accounting
+﻿namespace MoneyTrackApp.Accounting
 {
-	/// <summary>
-	/// Represents where the money is stored
-	/// </summary>
-	public interface IAccount
-	{
-		int Balance
-		{
-			get;
-		}
+    /// <summary>
+    /// Represents where the money is stored
+    /// </summary>
+    public interface IAccount
+    {
+        int Balance { get; }
 
-		string Name{get;}
-	}
+        string Name { get; }
+    }
 }
