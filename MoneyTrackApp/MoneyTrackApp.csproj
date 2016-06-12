@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="Accounting\AccountRegister.cs" />
     <Compile Include="Accounting\IAccount.cs" />
+    <Compile Include="Accounting\IRegisterAccounts.cs" />
     <Compile Include="Accounting\Output\AccountsStandardOutput.cs" />
     <Compile Include="Accounting\Parsing\AccountRegisterAdapter.cs" />
     <Compile Include="Accounting\Parsing\AddAccountParser.cs" />

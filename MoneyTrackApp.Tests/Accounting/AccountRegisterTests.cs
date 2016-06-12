@@ -79,7 +79,7 @@ namespace MoneyTrackApp.Accounting
             sut.CreateCheckAccount("check");
             sut.CreateIncomeAccount("c");
 
-            var actual = sut.GetCheckAccounts();
+            var actual = sut.GetAccounts().GetCheckingAccounts();
             var expected = new[] {
                 new AccountByNameEquals("check")
             };
@@ -88,7 +88,6 @@ namespace MoneyTrackApp.Accounting
                 actual,
                 "check account notfound");
         }
-
 
         [Test]
         public void Cannot_have_a_check_account_with_more_than_20_characters()
@@ -154,7 +153,7 @@ namespace MoneyTrackApp.Accounting
             var sut = fixture.CreateSUT();
             sut.CreateCheckAccount("a");
 
-            var actual = sut.GetAccounts()[0].Balance;
+            var actual = sut.GetAccounts().ElementAt(0).Balance;
 
             Assert.AreEqual(0, actual, "account balance");
         }
@@ -166,7 +165,7 @@ namespace MoneyTrackApp.Accounting
             var sut = fixture.CreateSUT();
             sut.CreateExpenseAccount("a");
 
-            var actual = sut.GetAccounts()[0].Balance;
+            var actual = sut.GetAccounts().ElementAt(0).Balance;
 
             Assert.AreEqual(0, actual, "account balance");
         }
@@ -178,7 +177,7 @@ namespace MoneyTrackApp.Accounting
             var sut = fixture.CreateSUT();
             sut.CreateIncomeAccount("a");
 
-            var actual = sut.GetAccounts()[0].Balance;
+            var actual = sut.GetAccounts().ElementAt(0).Balance;
 
             Assert.AreEqual(0, actual, "account balance");
         }

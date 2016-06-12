@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using MoneyTrackApp.Accounting;
 using MoneyTrackApp.Accounting.Output;
 using MoneyTrackApp.Accounting.Parsing;
@@ -16,9 +17,11 @@ namespace MoneyTrackApp
                 parser.ExecuteCommand(line);
             }
 
+            
+			var registerAccounts = register.GetAccounts();
             var output = new AccountsStandardOutput(
-                register.GetAccounts(),
-                register.GetCheckAccounts());
+				registerAccounts.ToArray(),
+				registerAccounts.GetCheckingAccounts().ToArray());
             foreach (var line in output.Lines())
             {
                 Console.Out.WriteLine(line);
